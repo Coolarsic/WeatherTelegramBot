@@ -2,18 +2,15 @@ import datetime
 import json
 import os
 import random
-
 import requests
 from PIL import Image, ImageFont, ImageDraw
 from aiogram import types
 from aiogram.types import ParseMode, InputFile
-
 from config import WEATHER_TOKEN, WEATHER_CONDITIONS_URLS, WEATHER_SHORTCUTS, GET_WEATHER_MESSAGE
 from data import db_session
 from forms.user import User
 from loader import bot
 from tools.geocode import get_coords
-
 
 WINDOW_SIZE = (860, 400)
 

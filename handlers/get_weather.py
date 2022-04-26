@@ -1,16 +1,10 @@
-import datetime
 import json
-import os
-import random
-from PIL import Image, ImageDraw, ImageFont
-from config import WEATHER_CONDITIONS_URLS
 import requests as requests
 from aiogram import types
-from aiogram.types import ParseMode, InputFile
 from forms.user import User
 from data import db_session
 from tools.geocode import get_coords
-from config import WEATHER_TOKEN, GET_WEATHER_MESSAGE, WEATHER_SHORTCUTS
+from config import WEATHER_TOKEN, GET_WEATHER_MESSAGE
 from loader import dp, bot
 from config import SAD_ART
 

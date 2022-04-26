@@ -7,9 +7,6 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt
 from aiogram import types
-from aiogram.dispatcher import FSMContext
-from aiogram.dispatcher.filters.state import State, StatesGroup
-from aiogram.types import ParseMode
 from forms.user import User
 from data import db_session
 from loader import dp, bot
@@ -26,6 +23,7 @@ async def send_keyboard(message: types.Message):
 async def send_graph(call: types.CallbackQuery):
     try:
         num = int(call.data.split('_')[-1])  # получили число
+        await bot.delete_message(call.from_user.id, call.message.message_id)
         session = db_session.create_session()
         user = session.query(User).filter(call.from_user.id == User.chat_id).first()
         town = user.town

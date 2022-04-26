@@ -1,13 +1,9 @@
 from aiogram import types
-from aiogram.dispatcher.filters.builtin import Text
-from aiogram.types import ChatType, ParseMode, InputFile
+from aiogram.types import ParseMode
 from forms.user import User
 from data import db_session
-from forms.weather import WeatherNotifications
 from tools.get_user_notifications import get_user_notifications
-from aiogram.types import ReplyKeyboardRemove, \
-    ReplyKeyboardMarkup, KeyboardButton, \
-    InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import NOTIFICATIONS_WEATHER_MENU_MESSAGE
 from loader import dp, bot
 

@@ -1,6 +1,4 @@
 from aiogram import types
-from aiogram.types import ChatType, ParseMode
-from forms.user import User
 from data import db_session
 from loader import dp, bot
 from tools.get_user_notifications import get_user_notifications

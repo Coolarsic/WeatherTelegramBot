@@ -1,5 +1,4 @@
 from aiogram import types
-from aiogram.types import ChatType, ParseMode
 from forms.user import User
 from data import db_session
 

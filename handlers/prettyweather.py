@@ -10,7 +10,7 @@ from aiogram.types import ParseMode, InputFile
 from forms.user import User
 from data import db_session
 from tools.geocode import get_coords
-from config import WEATHER_TOKEN, GET_WEATHER_MESSAGE, WEATHER_SHORTCUTS, SAD_ART
+from config import WEATHER_TOKEN, WEATHER_SHORTCUTS, SAD_ART
 from loader import dp, bot
 WINDOW_SIZE = (860, 400)
 

@@ -1,7 +1,5 @@
 import requests
 from config import MAP_API
-
-
 #  Далее код нагло стыренный с одного из уроков
 
 

@@ -1,5 +1,5 @@
 from aiogram import types
-from aiogram.types import ChatType, ParseMode
+from aiogram.types import ParseMode
 from config import HELP_MESSAGE
 from loader import dp
 
