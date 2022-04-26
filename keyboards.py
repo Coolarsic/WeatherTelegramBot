@@ -9,7 +9,7 @@ start_keyboard = ReplyKeyboardMarkup(keyboard=[
 ])
 inline_keyboard = InlineKeyboardMarkup()
 inline_keyboard.insert(InlineKeyboardButton('Наш гитхаб', url=
-                                            'https://github.com/goldbocman/weather_telegram_bot/'))
+                                            'https://github.com/Coolarsic/WeatherTelegramBot'))
 
 notifications_inline_menu_type = InlineKeyboardMarkup(inline_keyboard=[
     [
